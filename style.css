@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 #glcanvas {
   padding-left: 0;
   padding-right: 0;
