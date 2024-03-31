@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conway's Game of Life in WebGL</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <canvas id="glcanvas" height="480" width="480"></canvas>
+
+  <!-- Shaders -->
+  <script name="shader" data-src="shaders/vertex.glsl" data-type="vertex" data-version="v1"></script>
+  <script name="shader" data-src="shaders/vertex2.glsl" data-type="vertex" data-version="v2"></script>
+  <script name="shader" data-src="shaders/fragment.glsl" data-type="fragment" data-version="v1"></script>
+  <script name="shader" data-src="shaders/fragment2.glsl" data-type="fragment" data-version="v2"></script>
+
+  <!-- Library: 3rd party libraries -->
+  <script type="text/javascript" src="lib/signals.js"></script>
+  <script type="text/javascript" src="lib/glMatrix.js"></script>  
+  <script type="text/javascript" src="lib/glUtils.js"></script>
+  <script type="text/javascript" src="lib/uiUtils.js"></script>  
+
+  <!-- Library: here goes the webgl stuff -->
+  <script src="script.js"></script>
+</body>
+</html>
